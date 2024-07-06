@@ -26,4 +26,9 @@ public class ApiStep {
     public void validationStatusCodeIsEquals(int status_code) {
         apiPage.validationStatusCodeIsEquals(status_code);
     }
+
+    @Then("validation response body post login user")
+    public void validationResponseBodyPostLoginUser() {
+        apiPage.validationResponseBodyPostLoginUser();
+    }
 }

@@ -10,13 +10,10 @@ public class WebPage {
     By input_password = By.xpath("//input[@placeholder='Masukkan kata sandi Anda']");
     By click_masuk = By.xpath("//div[@class='mat-mdc-dialog-surface mdc-dialog__surface']//child::button");
     By invoice_home_dashboard = By.xpath("//div[@class='invoicer-wrapper']");
-//    By err_msg = By.xpath("//div[@class='cdk-overlay-container']//div[@class='cdk-global-overlay-wrapper']");
 
     By error_msg(String errMsg) {
         return By.xpath("//h3[contains(text(),'" + errMsg + "')]");
     }
-//      //div[@class='mdc-snackbar_surface ng-trigger ng-trigger-state ng-star-inserted']//h3[@class='ng-star-inserted']
-//    "//div[@class='cdk-overlay-container']/child::div[@class='paper-toast error']//*[contains(text(),' " + errMsg + "')]"
     public void openBrowser() {
         driver.get("https://www.paper.id/webappv1/#/login");
     }

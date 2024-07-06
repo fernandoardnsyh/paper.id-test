@@ -32,4 +32,9 @@ public class ApiPage {
         assertThat(res.statusCode()).isEqualTo(status_code);
         System.out.println(res.getStatusCode());
     }
+
+    public void validationResponseBodyPostLoginUser() {
+        String token = res.jsonPath().getString("token");
+        assertThat(token).isNotNull();
+    }
 }
